@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Hotel Brokerage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .hotel-listing {
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .hotel-image {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-right: 20px;
+    }
+
+    .hotel-details {
+      flex-grow: 1;
+    }
+
+    .hotel-details h2 {
+      font-size: 24px;
+      margin: 0 0 10px;
+    }
+
+    .hotel-details p {
+      margin: 5px 0;
+    }
+
+    .hotel-details .description {
+      margin-top: 10px;
+    }
+
+    .hotel-details .description::first-letter {
+      text-transform: capitalize;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="#">Hotel Brokerage</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Logout</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Other Options</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>Hotel Brokerage</h1>
+
+    <div class="hotel-listing">
+      <img class="hotel-image" src="https://www.tajhotels.com/content/dam/luxury/hotels/taj-palace-delhi/images/at_a_glance/16x7/Website-Banner-Facade.jpg/_jcr_content/renditions/cq5dam.web.1280.1280.jpeg" alt="Hotel 1">
+      <div class="hotel-details">
+        <h2>Hotel 1</h2>
+        <p>Location: City A</p>
+        <p>Price: $200,000</p>
+        <div class="description">
+          <p>This is a beautiful hotel with three bedrooms and two bathrooms. It features a spacious living area, a modern kitchen, and a backyard with a swimming pool.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hotel-listing">
+      <img class="hotel-image" src="https://content.r9cdn.net/rimg/himg/5c/fb/45/ice-115027628-68615402_3XL-528530.jpg" alt="Hotel 2">
+      <div class="hotel-details">
+        <h2>Hotel 2</h2>
+        <p>Location: City B</p>
+        <p>Price: $300,000</p>
+        <div class="description">
+          <p>Experience luxury living in this spacious hotel. It offers five bedrooms, four bathrooms, a home theater, and a well-maintained garden.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hotel-listing">
+      <img class="hotel-image" src="https://www.ihgplc.com/-/media/ihg/images/brands/regent/regent_carousel_1.jpg" alt="hotel 3">
+      <div class="hotel-details">
+        <h2>hotel 3</h2>
+        <p>Location: City C</p>
+        <p>Price: $250,000</p>
+        <div class="description">
+          <p>This cozy hotel is perfect for those seeking tranquility. It offers two bedrooms, a fireplace, and a stunning view of the surrounding mountains.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
